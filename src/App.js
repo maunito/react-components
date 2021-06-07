@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('./cards.json')
+    fetch("https://raw.githubusercontent.com/maunito/react-components/public/cards.json")
       .then(response => response.json())
       .then((data) => {
         this.setState({
