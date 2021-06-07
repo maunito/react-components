@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Bödvar",
+    "imageUrl": "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg",
+    "lat": 48.884211,
+    "lng": 2.346890
+  },
+  {
+    "name": "Mirage",
+    "imageUrl": "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg",
+    "lat": 48.884211,
+    "lng": 2.346890
+  },
+  {
+    "name": "Queen Nai",
+    "imageUrl": "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg",
+    "lat": 48.884211,
+    "lng": 2.346890
+  },
+  {
+    "name": "Hattori",
+    "imageUrl": "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg",
+    "lat": 48.884211,
+    "lng": 2.346890
+  }
+]

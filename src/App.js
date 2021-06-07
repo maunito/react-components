@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/card'
-import Panel from './components/panel'
+// import Panel from './components/panel'
 
 class App extends Component {
-  render() {
-
-    const card = {
-      "name": "Bödvar", 
-      "imageUrl": "https://www.brawlhalla.com/c/uploads/2018/11/Bodvar-1.png"
+  constructor(props) {
+    super(props);
+    this.state = {
+      cards: []
     };
+  }
+
+  componentDidMount() {
+    fetch('./cards.json')
+      .then(response => response.json())
+      .then((data) => {
+        this.setState({
+          allCards: data,
+          cards: data,
+          selectedCard: data[0]
+        })
+      })
+  }
+
+  render() {
 
     return (
       <div className ="app">
@@ -17,9 +31,9 @@ class App extends Component {
           <div className="search">
           </div>
           <div className="cards-container">
-            <Card card={card}/>
-            <Card card={card}/>
-            <Card card={card}/>
+            {this.state.cards.map((card) => {
+              return <Card card={card}/>
+            })}
           </div>
         </div>
         <div className="map">
