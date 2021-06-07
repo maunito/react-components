@@ -2,29 +2,29 @@
   {
     "name": "Bödvar",
     "imageUrl": "https://www.brawlhalla.com/c/uploads/2018/11/Bodvar-1.png",
-    "lat": 48.884211,
-    "lng": 2.346890,
+    "lat": 5.1632955,
+    "lng": -69.4146705,
     "color": "blue"
   },
   {
     "name": "Mirage",
     "imageUrl": "https://www.brawlhalla.com/c/uploads/2018/11/Mirage.png",
-    "lat": 48.884211,
-    "lng": 2.346890,
+    "lat": -36.739055,
+    "lng": -71.0574941,
     "color": "red"
   },
   {
     "name": "Queen Nai",
     "imageUrl": "https://www.brawlhalla.com/c/uploads/2018/11/Nai.png",
-    "lat": 48.884211,
-    "lng": 2.346890,
+    "lat": -38.4192641,
+    "lng": -63.5989206,
     "color": "green"
   },
   {
     "name": "Hattori",
     "imageUrl": "https://www.brawlhalla.com/c/uploads/2018/11/Hattori.png",
-    "lat": 48.884211,
-    "lng": 2.346890,
+    "lat": -23.4380203,
+    "lng": -58.4483065,
     "color": "purple"
   }
 ]

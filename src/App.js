@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Card from './components/card'
+import GoogleMapReact from 'google-map-react'
+import Marker from './components/marker'
 // import Panel from './components/panel'
 
 class App extends Component {
@@ -23,7 +25,14 @@ class App extends Component {
       })
   }
 
+
+
   render() {
+
+    const center = {
+      lat: -16.2837065,
+      lng: -63.5493965
+    }
 
     return (
       <div className ="app">
@@ -37,6 +46,13 @@ class App extends Component {
           </div>
         </div>
         <div className="map">
+          <GoogleMapReact
+            center={center}
+            zoom={1}>
+              {this.state.cards.map((card) => {
+              return <Marker lat={card.lat} lng={card.lng}/>
+            })}
+          </GoogleMapReact>
         </div>
       </div>
     );
