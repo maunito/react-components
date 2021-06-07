@@ -7,9 +7,12 @@ class Card extends React.Component {
     const name = this.props.card.name;
 
     const style = {
-      backgroundImage: "url('" + this.props.card.imageUrl + "')",
-      color: this.props.color
+      backgroundImage: "url('" + this.props.card.imageUrl + "')"
     };
+
+    const color = {
+      color: this.props.color.toString
+    }
 
     
     return (
@@ -17,7 +20,7 @@ class Card extends React.Component {
         <div className="card-image" style={style}>
         </div>
         <div className="card-name-container">
-          <h2 className="card-name">{name}</h2>
+          <h2 style={color }className="card-name">{name}</h2>
         </div>
       </div>
 
