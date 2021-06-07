@@ -7,7 +7,8 @@ class Card extends React.Component {
     const name = this.props.card.name;
 
     const style = {
-      backgroundImage: "url('" + this.props.card.imageUrl + "')"
+      backgroundImage: "url('" + this.props.card.imageUrl + "')",
+      color: this.props.color
     };
 
     

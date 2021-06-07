@@ -9,7 +9,8 @@
     "name": "Mirage",
     "imageUrl": "https://www.brawlhalla.com/c/uploads/2018/11/Mirage.png",
     "lat": 48.884211,
-    "lng": 2.346890
+    "lng": 2.346890,
+    "color": "red"
   },
   {
     "name": "Queen Nai",
