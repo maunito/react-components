@@ -11,13 +11,17 @@ class Card extends React.Component {
       backgroundImage: "url('" + this.props.card.imageUrl + "')"
     };
 
+    const fontColor = {
+      color: this.props.card.color
+    }
+
     
     return (
       <div className="card" onClick={this.handleClick} >
         <div className="card-image" style={style}>
         </div>
         <div className="card-name-container">
-          <h2 className="card-name">{name}</h2>
+          <h2 className="card-name" style={fontColor}>{name}</h2>
         </div>
       </div>
     );
