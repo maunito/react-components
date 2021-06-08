@@ -1,5 +1,6 @@
 .app {
   display: flex;
+  background-color: #345976;
 }
 
 .main {
@@ -37,13 +38,3 @@
   position: sticky;
 }
 
-
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
