@@ -25,13 +25,27 @@ class App extends Component {
       })
   }
 
+  selectCard = (card) => {
+    console.log(card)
+    this.setState({
+      selectedCard: card
+    })
+  }
+
 
 
   render() {
 
-    const center = {
+    let center = {
       lat: -16.2837065,
       lng: -63.5493965
+    }
+
+    if (this.state.selectedCard) {
+      center = {
+        lat: this.state.selectedCard.lat,
+        lng: this.state.selectedCard.lng
+      }
     }
 
     return (
@@ -41,7 +55,10 @@ class App extends Component {
           </div>
           <div className="cards-container">
             {this.state.cards.map((card) => {
-              return <Card card={card}/>
+              return <Card 
+              key={card.name} 
+              card={card}
+              selectCard={this.selectCard}/>
             })}
           </div>
         </div>
@@ -50,7 +67,12 @@ class App extends Component {
             center={center}
             zoom={1}>
               {this.state.cards.map((card) => {
-              return <Marker lat={card.lat} lng={card.lng}/>
+              return <Marker 
+                key={card.name} 
+                lat={card.lat} 
+                lng={card.lng}
+                text={card.name}
+                selected={card === this.state.selectedCard}/>
             })}
           </GoogleMapReact>
         </div>
