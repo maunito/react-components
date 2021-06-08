@@ -5,8 +5,9 @@
   border: 3px solid black;
   margin: 10px;
   cursor: pointer;
-  
 }
+
+/* cards container is in app.css */
 
 .card:hover {
   opacity: 0.9;

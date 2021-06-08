@@ -3,13 +3,17 @@ import './App.css';
 import Card from './components/card'
 import GoogleMapReact from 'google-map-react'
 import Marker from './components/marker'
+
 // import Panel from './components/panel'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: []
+      cards: [],
+      allCards: [],
+      selectedCard: null,
+      search: ""
     };
   }
 
@@ -26,12 +30,17 @@ class App extends Component {
   }
 
   selectCard = (card) => {
-    console.log(card)
     this.setState({
       selectedCard: card
     })
   }
 
+  handleSearch = (event) => {
+    this.setState({
+      search: event.target.value,
+      cards: this.state.allCards.filter((card) => new RegExp(event.target.value, "i").exec(card.name))
+    });
+  }
 
 
   render() {
@@ -52,6 +61,11 @@ class App extends Component {
       <div className ="app">
         <div className="main">
           <div className="search">
+            <input 
+              type="text" 
+              placeholder="Search..." 
+              value={this.state.search}
+              onChange={this.handleSearch} />
           </div>
           <div className="cards-container">
             {this.state.cards.map((card) => {
