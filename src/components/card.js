@@ -15,6 +15,10 @@ class Card extends React.Component {
       color: this.props.card.color
     }
 
+    // const frameColorAndShadow = {
+    //   borderColor: this.props.card.color
+    // }
+    // this goes in div card: style={frameColorAndShadow}
     
     return (
       <div className="card" onClick={this.handleClick} >

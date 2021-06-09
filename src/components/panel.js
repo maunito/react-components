@@ -4,7 +4,7 @@ import './panel.css';
 class Panel extends React.Component {
   render() {
     return (
-      <div className="panel">Welcome to Brawlhalla</div>
+      <div className="panel">WELCOME TO BRAWLHALLA</div>
       
     );
   }

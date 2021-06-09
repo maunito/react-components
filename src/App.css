@@ -37,13 +37,15 @@
   white-space: nowrap;
   background-color: #345976;
   padding-bottom: 30px;
-  height: 50vh;
+  height: 40vh;
 }
 
 .map {
   flex-grow: 1;
-  height: 45vh;
+  height: 60vh;
   top: 0;
   position: sticky;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 

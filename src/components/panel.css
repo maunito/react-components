@@ -1,7 +1,8 @@
 .panel {
-  border: 1px solid black;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   margin: 25px;
-  background-color: lightgray;
+  color: white;
+  letter-spacing: 7px;
+  font-size: x-large;
 }

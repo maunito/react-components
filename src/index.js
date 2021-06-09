@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Panel from './components/panel';
-import Card from './components/card';
+// import Panel from './components/panel';
+// import Card from './components/card';
 
 
 ReactDOM.render(

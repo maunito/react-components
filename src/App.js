@@ -4,7 +4,7 @@ import Card from './components/card'
 import GoogleMapReact from 'google-map-react'
 import Marker from './components/marker'
 
-// import Panel from './components/panel'
+import Panel from './components/panel'
 
 class App extends Component {
   constructor(props) {
@@ -59,6 +59,7 @@ class App extends Component {
 
     return (
       <div className ="app">
+        <Panel/>
         <div className="map">
           <GoogleMapReact
             center={center}
@@ -69,6 +70,8 @@ class App extends Component {
                 lat={card.lat} 
                 lng={card.lng}
                 text={card.name}
+                mapImage={card.mapImage}
+
                 selected={card === this.state.selectedCard}/>
             })}
           </GoogleMapReact>
