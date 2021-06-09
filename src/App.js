@@ -71,6 +71,7 @@ class App extends Component {
                 lng={card.lng}
                 text={card.name}
                 mapImage={card.mapImage}
+                mapImageBorderColor={card.color}
 
                 selected={card === this.state.selectedCard}/>
             })}

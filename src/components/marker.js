@@ -4,7 +4,8 @@ import './marker.css';
 class Marker extends React.Component {
   render() {
     const style = {
-      backgroundImage: "url('" + this.props.mapImage + "')"
+      backgroundImage: "url('" + this.props.mapImage + "')",
+      borderColor: this.props.mapImageBorderColor
     }
     let classes ="marker";
     if (this.props.selected) {
