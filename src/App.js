@@ -59,13 +59,6 @@ class App extends Component {
 
     return (
       <div className ="app">
-        <div className="search">
-          <input 
-            type="text" 
-            placeholder="Search..." 
-            value={this.state.search}
-            onChange={this.handleSearch} />
-        </div>
         <div className="map">
           <GoogleMapReact
             center={center}
@@ -79,6 +72,13 @@ class App extends Component {
                 selected={card === this.state.selectedCard}/>
             })}
           </GoogleMapReact>
+        </div>
+        <div className="search">
+          <input 
+            type="text" 
+            placeholder="Search..." 
+            value={this.state.search}
+            onChange={this.handleSearch} />
         </div>
         <div className="main">
           <div className="cards-container">

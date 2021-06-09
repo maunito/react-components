@@ -16,10 +16,12 @@
   padding: 10px 3px 5px 3px;
   height: 5vh;
   text-align: center;
+  box-shadow: 2px 2px 2px 2px #345976;
+  z-index: 500;
 }
 
 .search input {
-  width: 90%;
+  width: 50%;
   height: 28px;
   font-size: 24px;
   text-align: center;
@@ -33,9 +35,9 @@
   z-index: 100;
   overflow: auto;
   white-space: nowrap;
-  box-shadow: 100px 100px 100px 100px #345976;
   background-color: #345976;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  height: 50vh;
 }
 
 .map {
@@ -43,6 +45,5 @@
   height: 45vh;
   top: 0;
   position: sticky;
-  overflow: scroll;
 }
 
