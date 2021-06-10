@@ -3,6 +3,9 @@
   text-align: center;
   margin: 25px;
   color: white;
+}
+
+.panel h1 {
   letter-spacing: 7px;
-  font-size: x-large;
+  text-shadow: 2px 2px black;
 }

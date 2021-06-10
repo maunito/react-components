@@ -59,7 +59,7 @@ class App extends Component {
 
     return (
       <div className ="app">
-        <Panel/>
+        <Panel title="WELCOME TO BRAWLHALLA"/>
         <div className="map">
           <GoogleMapReact
             center={center}
